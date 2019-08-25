@@ -54,19 +54,19 @@
   };
 </script>
 
-  <meta name="description" content="实验室电脑在pull和push同步后二次测试。">
-<meta name="keywords" content="测试">
+  <meta name="description" content="为什么使用介观方法？（Why Mesoscale Methods?）&amp;emsp;&amp;emsp;基于连续性假设的模型对于大部分流体问题来说已经足够了；但是，许多宏观的流体现象仍然受到其潜在的微观世界的重要影响。表面张力就是一个重要的例子：分子之间的凝聚力在宏观上起到了相位分离的作用，同时还伴随着表面的动力学影响。但是，使用连续性方法来模拟仿真这一现象充满了困难，因为控制方程都是在宏观尺度下的，其中由于">
+<meta name="keywords" content="Fluid">
 <meta property="og:type" content="article">
-<meta property="og:title" content="多终端测试4">
-<meta property="og:url" content="http://yoursite.com/2019/08/08/多终端测试4/index.html">
+<meta property="og:title" content="使用介观方法（Mesoscale Methods）的原因">
+<meta property="og:url" content="http://yoursite.com/2019/08/10/使用介观方法（Mesoscale-Methods）的原因/index.html">
 <meta property="og:site_name" content="YIHUI">
-<meta property="og:description" content="实验室电脑在pull和push同步后二次测试。">
+<meta property="og:description" content="为什么使用介观方法？（Why Mesoscale Methods?）&amp;emsp;&amp;emsp;基于连续性假设的模型对于大部分流体问题来说已经足够了；但是，许多宏观的流体现象仍然受到其潜在的微观世界的重要影响。表面张力就是一个重要的例子：分子之间的凝聚力在宏观上起到了相位分离的作用，同时还伴随着表面的动力学影响。但是，使用连续性方法来模拟仿真这一现象充满了困难，因为控制方程都是在宏观尺度下的，其中由于">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-08T04:20:11.382Z">
+<meta property="og:updated_time" content="2019-08-12T05:09:38.348Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="多终端测试4">
-<meta name="twitter:description" content="实验室电脑在pull和push同步后二次测试。">
-  <link rel="canonical" href="http://yoursite.com/2019/08/08/多终端测试4/">
+<meta name="twitter:title" content="使用介观方法（Mesoscale Methods）的原因">
+<meta name="twitter:description" content="为什么使用介观方法？（Why Mesoscale Methods?）&amp;emsp;&amp;emsp;基于连续性假设的模型对于大部分流体问题来说已经足够了；但是，许多宏观的流体现象仍然受到其潜在的微观世界的重要影响。表面张力就是一个重要的例子：分子之间的凝聚力在宏观上起到了相位分离的作用，同时还伴随着表面的动力学影响。但是，使用连续性方法来模拟仿真这一现象充满了困难，因为控制方程都是在宏观尺度下的，其中由于">
+  <link rel="canonical" href="http://yoursite.com/2019/08/10/使用介观方法（Mesoscale-Methods）的原因/">
 
 
 <script id="page-configurations">
@@ -80,7 +80,7 @@
   };
 </script>
 
-  <title>多终端测试4 | YIHUI</title>
+  <title>使用介观方法（Mesoscale Methods）的原因 | YIHUI</title>
   
 
 
@@ -217,7 +217,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/08/多终端测试4/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/10/使用介观方法（Mesoscale-Methods）的原因/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yihui-Ma">
@@ -231,7 +231,7 @@
       <header class="post-header">
 
         
-          <h1 class="post-title" itemprop="name headline">多终端测试4
+          <h1 class="post-title" itemprop="name headline">使用介观方法（Mesoscale Methods）的原因
 
             
           </h1>
@@ -248,11 +248,19 @@
                 
               
 
-              <time title="创建时间：2019-08-08 12:19:30 / 修改时间：12:20:11" itemprop="dateCreated datePublished" datetime="2019-08-08T12:19:30+08:00">2019-08-08</time>
+              <time title="创建时间：2019-08-10 16:30:01" itemprop="dateCreated datePublished" datetime="2019-08-10T16:30:01+08:00">2019-08-10</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-08-12 13:09:38" itemprop="dateModified" datetime="2019-08-12T13:09:38+08:00">2019-08-12</time>
+              </span>
             
           
             <span class="post-meta-item">
@@ -261,7 +269,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/测试/" itemprop="url" rel="index"><span itemprop="name">测试</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Fluid/" itemprop="url" rel="index"><span itemprop="name">Fluid</span></a></span>
 
                 
                 
@@ -280,7 +288,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>实验室电脑在pull和push同步后二次测试。</p>
+        <h1 id="为什么使用介观方法？（Why-Mesoscale-Methods-）"><a href="#为什么使用介观方法？（Why-Mesoscale-Methods-）" class="headerlink" title="为什么使用介观方法？（Why Mesoscale Methods?）"></a>为什么使用介观方法？（Why Mesoscale Methods?）</h1><p>&emsp;&emsp;基于连续性假设的模型对于大部分流体问题来说已经足够了；但是，许多宏观的流体现象仍然受到其潜在的微观世界的重要影响。表面张力就是一个重要的例子：分子之间的凝聚力在宏观上起到了相位分离的作用，同时还伴随着表面的动力学影响。但是，使用连续性方法来模拟仿真这一现象充满了困难，因为控制方程都是在宏观尺度下的，其中由于基本机制而产生的表面动力学都是在微观尺度下的。在微通道下的气体流动，尤其是在具有墙边界（wall boundaries）（大Kn数流动）的情况下是另一种情况，在这里基于连续性方法是不够的。介观模型技术在这些情况是有用处的，如我们需要模拟宏观流体，但是也需要拓展这之下重要的微观现象。介观方法通过统计力学和动力学理论，提供了微观世界和宏观世界的连接。</p>
+<p>&emsp;&emsp;目前已经发展了许多种介观尺度方法，其中的一些直接地求解了玻尔兹曼方程（Boltzmann equation），如格子玻尔兹曼方法（lattice Boltzmann (LB) method），离散速度方法（discrete velocity method (DVM)），气体动力学方案（gas-kinetic scheme (GKS)）等；并且一些直接模拟了伪粒子，如格子气细胞自动机（Lattice Gas Cellular Automata (LGCA)），耗散粒子动力学（Dissipative Particle Dynamics (DPD)），以及直接模拟蒙特卡罗方法（Direct Simulation Monte Carlo (DSMC) method）。所有的这些方法不像在分子动力学（Molecular Dynamics (MD)）里一样追踪单独的粒子，但是跟踪一组伪粒子（pseudo-particles），统计上地由它们的概率分布函数（Probability Distribution Function (PDF)）表示。</p>
+<p>以上都引用自：</p>
+<blockquote>
+<p>Kinetically Consistent Thermal Lattice Boltzmann Models  -by Parthib R. Rao, B.Tech, National Institute of Technology, Calicut, India, 2004</p>
+</blockquote>
 
     </div>
 
@@ -292,13 +305,13 @@
           
         
         <div class="post-tags">
-            <a href="/tags/测试/" rel="tag"># 测试</a>
+            <a href="/tags/Fluid/" rel="tag"># Fluid</a>
           
         </div>
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
-              <a href="/2019/08/08/多终端测试3/" rel="next" title="多终端测试3">
-                <i class="fa fa-chevron-left"></i> 多终端测试3
+              <a href="/2019/08/09/Liouville-s-theorem-Hamiltonian/" rel="next" title="Liouville's theorem(Hamiltonian)">
+                <i class="fa fa-chevron-left"></i> Liouville's theorem(Hamiltonian)
               </a>
             
           </div>
@@ -306,8 +319,8 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-              <a href="/2019/08/08/Nabla算子——与梯度、散度、旋度和拉普拉斯算子/" rel="prev" title="Nabla算子——与梯度、散度、旋度和拉普拉斯算子">
-                Nabla算子——与梯度、散度、旋度和拉普拉斯算子 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/08/10/Lattice-Boltzmann-Method/" rel="prev" title="Lattice Boltzmann Method">
+                Lattice Boltzmann Method <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -338,8 +351,17 @@
 
   <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -429,6 +451,23 @@
 
         </div>
       </div>
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#为什么使用介观方法？（Why-Mesoscale-Methods-）"><span class="nav-number">1.</span> <span class="nav-text">为什么使用介观方法？（Why Mesoscale Methods?）</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
     </div>
   </aside>
