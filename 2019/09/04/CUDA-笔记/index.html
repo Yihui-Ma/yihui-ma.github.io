@@ -54,19 +54,19 @@
   };
 </script>
 
-  <meta name="description" content="个人电脑测试2。">
-<meta name="keywords" content="测试">
+  <meta name="description" content="1__host__ ​ __device__ ​cudaError_t cudaMalloc ( void** devPtr, size_t size )  在使用CUDA分配内存函数时，会应用为如下： 12char *a;cudaMalloc((void**)&amp;amp;a,size);  通常情况下需要返回cudaMalloc的错误状态为 12char *a;checkCudaErrors(cu">
+<meta name="keywords" content="Computer Science">
 <meta property="og:type" content="article">
-<meta property="og:title" content="多终端测试2">
-<meta property="og:url" content="http://yoursite.com/2019/08/08/多终端测试2/index.html">
+<meta property="og:title" content="CUDA 笔记">
+<meta property="og:url" content="http://yoursite.com/2019/09/04/CUDA-笔记/index.html">
 <meta property="og:site_name" content="YIHUI">
-<meta property="og:description" content="个人电脑测试2。">
+<meta property="og:description" content="1__host__ ​ __device__ ​cudaError_t cudaMalloc ( void** devPtr, size_t size )  在使用CUDA分配内存函数时，会应用为如下： 12char *a;cudaMalloc((void**)&amp;amp;a,size);  通常情况下需要返回cudaMalloc的错误状态为 12char *a;checkCudaErrors(cu">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-08T04:17:59.055Z">
+<meta property="og:updated_time" content="2019-09-05T13:41:32.177Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="多终端测试2">
-<meta name="twitter:description" content="个人电脑测试2。">
-  <link rel="canonical" href="http://yoursite.com/2019/08/08/多终端测试2/">
+<meta name="twitter:title" content="CUDA 笔记">
+<meta name="twitter:description" content="1__host__ ​ __device__ ​cudaError_t cudaMalloc ( void** devPtr, size_t size )  在使用CUDA分配内存函数时，会应用为如下： 12char *a;cudaMalloc((void**)&amp;amp;a,size);  通常情况下需要返回cudaMalloc的错误状态为 12char *a;checkCudaErrors(cu">
+  <link rel="canonical" href="http://yoursite.com/2019/09/04/CUDA-笔记/">
 
 
 <script id="page-configurations">
@@ -80,7 +80,7 @@
   };
 </script>
 
-  <title>多终端测试2 | YIHUI</title>
+  <title>CUDA 笔记 | YIHUI</title>
   
 
 
@@ -217,7 +217,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/08/多终端测试2/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/04/CUDA-笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yihui-Ma">
@@ -231,7 +231,7 @@
       <header class="post-header">
 
         
-          <h1 class="post-title" itemprop="name headline">多终端测试2
+          <h1 class="post-title" itemprop="name headline">CUDA 笔记
 
             
           </h1>
@@ -248,11 +248,19 @@
                 
               
 
-              <time title="创建时间：2019-08-08 11:47:07 / 修改时间：12:17:59" itemprop="dateCreated datePublished" datetime="2019-08-08T11:47:07+08:00">2019-08-08</time>
+              <time title="创建时间：2019-09-04 22:24:17" itemprop="dateCreated datePublished" datetime="2019-09-04T22:24:17+08:00">2019-09-04</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-09-05 21:41:32" itemprop="dateModified" datetime="2019-09-05T21:41:32+08:00">2019-09-05</time>
+              </span>
             
           
             <span class="post-meta-item">
@@ -261,7 +269,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/测试/" itemprop="url" rel="index"><span itemprop="name">测试</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Computer-Science/" itemprop="url" rel="index"><span itemprop="name">Computer Science</span></a></span>
 
                 
                 
@@ -280,7 +288,20 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>个人电脑测试2。</p>
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">__host__ ​ __device__ ​cudaError_t cudaMalloc ( void** devPtr, size_t size )</span><br></pre></td></tr></table></figure>
+
+<p>在使用CUDA分配内存函数时，会应用为如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">char *a;</span><br><span class="line">cudaMalloc((void**)&amp;a,size);</span><br></pre></td></tr></table></figure>
+
+<p>通常情况下需要返回cudaMalloc的错误状态为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">char *a;</span><br><span class="line">checkCudaErrors(cudaMalloc((void**)&amp;a,size));</span><br></pre></td></tr></table></figure>
+
+<p>其中，char* a指的是a为一个指向char类型数据的指针，而&amp;a为一个地址，存放的是a的地址，因此&amp;a也为一个指针，这个指针是指向a的指针。由于a自身也为一个指针，因此&amp;a为一个指向指针a的指针，为二重指针。而函数中使用到的第一个变量类型为“void** devPtr”，也就是说这个函数的第一个参数要求为无类型的二重指针，因此当我们将“&amp;a”传入时，我们只满足了传入二重指针的要求，而没有满足传入void类型的要求，因此在&amp;a前加上“(void<strong>)”意味着将它强制转换成“void</strong>”的变量，即转换成无类型的二重指针。</p>
+<p>cudaMalloc中使用双指针的原因：（1）所有CUDA API函数都返回错误代码（如果没有错误，则返回cudaSuccess）。所有其他参数通过引用传递。然而，在纯C中不能有引用，这就是为什么必须传递一个变量的地址，希望返回信息被存储。因为返回一个指针，需要传递一个双指针。（2）在C中，数据可以通过值或通过simulated pass-by-reference（即通过指向数据的指针）传递到函数。按值是一种单向方法，通过指针允许在函数及其调用环境之间的双向数据流。当数据项通过函数参数列表传递给函数时，函数期望修改原始数据项，以使修改的值出现在调用环境中，正确的C方法是传递数据项通过指针。在C中，当我们通过指针时，我们获取需要修改的项的地址，创建一个指针（在这种情况下可能是一个指针），并将地址传递给函数。这允许函数在调用环境中修改原始项目（通过指针）。通常malloc返回一个指针，我们可以在调用环境中使用赋值来将这个返回的值赋给所需的指针。在cudaMalloc的情况下，CUDA设计者选择使用返回值携带错误状态而不是指针。因此，调用环境中的指针的设置必须通过参考(即通过指针)传递给函数的参数之一发生。由于它是一个我们想要设置的指针值，我们必须取指针的地址(创建一个指针的指针)，并将该地址传递给cudaMalloc函数。</p>
+<p>以上参考于：</p>
+<blockquote>
+<p><a href="http://www.voidcn.com/article/p-hmzqzios-dp.html" target="_blank" rel="noopener">http://www.voidcn.com/article/p-hmzqzios-dp.html</a><br><a href="https://codeday.me/bug/20171113/95047.html" target="_blank" rel="noopener">https://codeday.me/bug/20171113/95047.html</a><br><a href="https://codeday.me/bug/20171029/90419.html" target="_blank" rel="noopener">https://codeday.me/bug/20171029/90419.html</a></p>
+</blockquote>
 
     </div>
 
@@ -292,13 +313,13 @@
           
         
         <div class="post-tags">
-            <a href="/tags/测试/" rel="tag"># 测试</a>
+            <a href="/tags/Computer-Science/" rel="tag"># Computer Science</a>
           
         </div>
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
-              <a href="/2019/08/08/多终端测试1/" rel="next" title="多终端测试1">
-                <i class="fa fa-chevron-left"></i> 多终端测试1
+              <a href="/2019/09/01/深入理解计算机系统-笔记/" rel="next" title="深入理解计算机系统 笔记">
+                <i class="fa fa-chevron-left"></i> 深入理解计算机系统 笔记
               </a>
             
           </div>
@@ -306,10 +327,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-              <a href="/2019/08/08/多终端测试3/" rel="prev" title="多终端测试3">
-                多终端测试3 <i class="fa fa-chevron-right"></i>
-              </a>
-            
           </div>
         </div>
     </footer>
@@ -524,6 +541,55 @@
 
   
 
+  
+    
+      <script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', function() {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script>
+
+    
   
 
   
