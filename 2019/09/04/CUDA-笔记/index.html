@@ -54,18 +54,18 @@
   };
 </script>
 
-  <meta name="description" content="1__host__ ​ __device__ ​cudaError_t cudaMalloc ( void** devPtr, size_t size )  在使用CUDA分配内存函数时，会应用为如下： 12char *a;cudaMalloc((void**)&amp;amp;a,size);  通常情况下需要返回cudaMalloc的错误状态为 12char *a;checkCudaErrors(cu">
+  <meta name="description" content="CUDA的内存分配（摘自网络）1__host__ ​ __device__ ​cudaError_t cudaMalloc ( void** devPtr, size_t size )  在使用CUDA分配内存函数时，会应用为如下： 12char *a;cudaMalloc((void**)&amp;amp;a,size);  通常情况下需要返回cudaMalloc的错误状态为 12char *a;che">
 <meta name="keywords" content="Computer Science">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CUDA 笔记">
 <meta property="og:url" content="http://yoursite.com/2019/09/04/CUDA-笔记/index.html">
 <meta property="og:site_name" content="YIHUI">
-<meta property="og:description" content="1__host__ ​ __device__ ​cudaError_t cudaMalloc ( void** devPtr, size_t size )  在使用CUDA分配内存函数时，会应用为如下： 12char *a;cudaMalloc((void**)&amp;amp;a,size);  通常情况下需要返回cudaMalloc的错误状态为 12char *a;checkCudaErrors(cu">
+<meta property="og:description" content="CUDA的内存分配（摘自网络）1__host__ ​ __device__ ​cudaError_t cudaMalloc ( void** devPtr, size_t size )  在使用CUDA分配内存函数时，会应用为如下： 12char *a;cudaMalloc((void**)&amp;amp;a,size);  通常情况下需要返回cudaMalloc的错误状态为 12char *a;che">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-05T13:41:32.177Z">
+<meta property="og:updated_time" content="2019-09-06T09:04:09.498Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CUDA 笔记">
-<meta name="twitter:description" content="1__host__ ​ __device__ ​cudaError_t cudaMalloc ( void** devPtr, size_t size )  在使用CUDA分配内存函数时，会应用为如下： 12char *a;cudaMalloc((void**)&amp;amp;a,size);  通常情况下需要返回cudaMalloc的错误状态为 12char *a;checkCudaErrors(cu">
+<meta name="twitter:description" content="CUDA的内存分配（摘自网络）1__host__ ​ __device__ ​cudaError_t cudaMalloc ( void** devPtr, size_t size )  在使用CUDA分配内存函数时，会应用为如下： 12char *a;cudaMalloc((void**)&amp;amp;a,size);  通常情况下需要返回cudaMalloc的错误状态为 12char *a;che">
   <link rel="canonical" href="http://yoursite.com/2019/09/04/CUDA-笔记/">
 
 
@@ -259,7 +259,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-09-05 21:41:32" itemprop="dateModified" datetime="2019-09-05T21:41:32+08:00">2019-09-05</time>
+                <time title="修改时间：2019-09-06 17:04:09" itemprop="dateModified" datetime="2019-09-06T17:04:09+08:00">2019-09-06</time>
               </span>
             
           
@@ -288,7 +288,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">__host__ ​ __device__ ​cudaError_t cudaMalloc ( void** devPtr, size_t size )</span><br></pre></td></tr></table></figure>
+        <h2 id="CUDA的内存分配（摘自网络）"><a href="#CUDA的内存分配（摘自网络）" class="headerlink" title="CUDA的内存分配（摘自网络）"></a>CUDA的内存分配（摘自网络）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">__host__ ​ __device__ ​cudaError_t cudaMalloc ( void** devPtr, size_t size )</span><br></pre></td></tr></table></figure>
 
 <p>在使用CUDA分配内存函数时，会应用为如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">char *a;</span><br><span class="line">cudaMalloc((void**)&amp;a,size);</span><br></pre></td></tr></table></figure>
@@ -296,12 +296,17 @@
 <p>通常情况下需要返回cudaMalloc的错误状态为</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">char *a;</span><br><span class="line">checkCudaErrors(cudaMalloc((void**)&amp;a,size));</span><br></pre></td></tr></table></figure>
 
+<p>code中的cudaMalloc()是用来分配内存的，这个函数调用的行为非常类似于标准的C函数malloc()，但该函数的作用是告诉CUDA运行时在设备上分配内存。第一个参数是一个指针，指向用于保存新分配内存地址的变量，第二个参数是分配内存的大小。除了分配内存的指针不是作为函数的返回值外，这个函数的行为与malloc()是相同的，并且返回类型为void*。</p>
 <p>其中，char* a指的是a为一个指向char类型数据的指针，而&amp;a为一个地址，存放的是a的地址，因此&amp;a也为一个指针，这个指针是指向a的指针。由于a自身也为一个指针，因此&amp;a为一个指向指针a的指针，为二重指针。而函数中使用到的第一个变量类型为“void** devPtr”，也就是说这个函数的第一个参数要求为无类型的二重指针，因此当我们将“&amp;a”传入时，我们只满足了传入二重指针的要求，而没有满足传入void类型的要求，因此在&amp;a前加上“(void<strong>)”意味着将它强制转换成“void</strong>”的变量，即转换成无类型的二重指针。</p>
 <p>cudaMalloc中使用双指针的原因：（1）所有CUDA API函数都返回错误代码（如果没有错误，则返回cudaSuccess）。所有其他参数通过引用传递。然而，在纯C中不能有引用，这就是为什么必须传递一个变量的地址，希望返回信息被存储。因为返回一个指针，需要传递一个双指针。（2）在C中，数据可以通过值或通过simulated pass-by-reference（即通过指向数据的指针）传递到函数。按值是一种单向方法，通过指针允许在函数及其调用环境之间的双向数据流。当数据项通过函数参数列表传递给函数时，函数期望修改原始数据项，以使修改的值出现在调用环境中，正确的C方法是传递数据项通过指针。在C中，当我们通过指针时，我们获取需要修改的项的地址，创建一个指针（在这种情况下可能是一个指针），并将地址传递给函数。这允许函数在调用环境中修改原始项目（通过指针）。通常malloc返回一个指针，我们可以在调用环境中使用赋值来将这个返回的值赋给所需的指针。在cudaMalloc的情况下，CUDA设计者选择使用返回值携带错误状态而不是指针。因此，调用环境中的指针的设置必须通过参考(即通过指针)传递给函数的参数之一发生。由于它是一个我们想要设置的指针值，我们必须取指针的地址(创建一个指针的指针)，并将该地址传递给cudaMalloc函数。</p>
 <p>以上参考于：</p>
 <blockquote>
+<p>本文为CSDN博主「LinJM-机器视觉」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/linj_m/article/details/41345263" target="_blank" rel="noopener">https://blog.csdn.net/linj_m/article/details/41345263</a> </p>
+</blockquote>
+<blockquote>
 <p><a href="http://www.voidcn.com/article/p-hmzqzios-dp.html" target="_blank" rel="noopener">http://www.voidcn.com/article/p-hmzqzios-dp.html</a><br><a href="https://codeday.me/bug/20171113/95047.html" target="_blank" rel="noopener">https://codeday.me/bug/20171113/95047.html</a><br><a href="https://codeday.me/bug/20171029/90419.html" target="_blank" rel="noopener">https://codeday.me/bug/20171029/90419.html</a></p>
 </blockquote>
+<h2 id="CUDA的深度拷贝（个人理解）"><a href="#CUDA的深度拷贝（个人理解）" class="headerlink" title="CUDA的深度拷贝（个人理解）"></a>CUDA的深度拷贝（个人理解）</h2><p>对于一个C++的自定义类型变量，且该变量包含其他类型的成员变量，在进行CUDA的变量拷贝时。</p>
 
     </div>
 
@@ -355,8 +360,17 @@
 
   <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -450,6 +464,23 @@
 
         </div>
       </div>
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CUDA的内存分配（摘自网络）"><span class="nav-number">1.</span> <span class="nav-text">CUDA的内存分配（摘自网络）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CUDA的深度拷贝（个人理解）"><span class="nav-number">2.</span> <span class="nav-text">CUDA的深度拷贝（个人理解）</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
     </div>
   </aside>
