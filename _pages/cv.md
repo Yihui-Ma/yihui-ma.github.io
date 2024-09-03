@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+You can find my CV here: [Yihui's Curriculum Vitae](../assets/CV-Yihui_Ma.pdf).
+
 Education
 ======
 * M.S. in Computer Science, ShanghaiTech University, 2022
