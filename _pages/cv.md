@@ -11,35 +11,40 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* M.S. in Computer Science, ShanghaiTech University, 2022
+* B.S. in n Aircraft Design and Engineering, Northwestern Polytechnical University, 2019
+
+Research experience
+======
+* 2019 - 2022: Graduate Student
+  * FLARE Lab, ShanghaiTech University,
+  * Fluid Simulation in Computer Graphics and Computational Physics:
+    * Single-phase and multi-phase of fluid simulation.
+    * Fluid-structure interaction / fluid-solid coupling.
+    * Machine learning with fluid simulation.
+  * Supervisor: Xiaopei Liu 
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2022 - Present: Game Developer
+  * Timi Studio, Tencent 
+    * Write codes of game play using Unreal Engine, Unity and Cocos Editor.
+    * Performance optimization of game engines.
+    * Research of cloth simulation of chaos library in Unreal Engine.
+    * Procedural Content Generation of terrain in game map using Houdini.
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Summer 2021: Game Developer Intern
+  * Timi Studio, Tencent 
+    * Research on Procedural Content Generation
   
-Skills
+<!-- Skills
 ======
 * Skill 1
 * Skill 2
   * Sub-skill 2.1
   * Sub-skill 2.2
   * Sub-skill 2.3
-* Skill 3
+* Skill 3 -->
 
 Publications
 ======
@@ -47,7 +52,7 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+<!-- Talks
 ======
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
@@ -61,4 +66,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
