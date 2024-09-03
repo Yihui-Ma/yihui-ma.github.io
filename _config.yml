@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "Yihui Ma / Tencent"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
+name                     : &name "Yihui Ma"
+description              : &description "Game Developer & Computer Graphics"
 url                      : https://yihui-ma.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Yihui-Ma/yihui-ma.github.io"
@@ -22,13 +22,13 @@ repository               : "Yihui-Ma/yihui-ma.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Yihui Ma"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "Game Developer & Computer Graphics"
+  location         : "Shanghai, China"
+  employer         : "Tencent"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "yihuimacn@gmail.com" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
