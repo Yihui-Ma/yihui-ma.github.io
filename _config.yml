@@ -21,7 +21,7 @@ repository               : "Yihui-Ma/yihui-ma.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "headIcon.jpeg"
   name             : "Yihui Ma"
   pronouns         : # example: "she/her"  
   bio              : "Game Developer & Computer Graphics"
