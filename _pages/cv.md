@@ -28,7 +28,7 @@ Research experience
 
 Work experience
 ======
-* 2022 - Present: Game Developer
+* 2022 - 2025: Game Developer
   * Timi Studio, Tencent 
     * Write codes of game play using Unreal Engine, Unity and Cocos Editor.
     * Performance optimization of game engines.
