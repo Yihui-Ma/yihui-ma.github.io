@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-At present I am a doctoral student in King Abdullah University of Science and Technology, supervised by Prof. Dominik L. Michels. Before, I was a game developer in Timi Studio Group at Tencent. I obtained my master degree in Computer Science
+At present I am a doctoral student in King Abdullah University of Science and Technology, supervised by Prof. [Dominik L. Michels](https://dmichels.de/). Before, I was a game developer in Timi Studio Group at Tencent. I obtained my master degree in Computer Science
 in ShanghaiTech University in 2022, advised by Prof. Xiaopei Liu. I did my bachelor’s degree in Aircraft Design and
 Engineering in Northwestern Polytechnical University(NPU) in 2019, advised by Prof. Shuhui Bu.
 
